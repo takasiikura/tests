@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>即日人気キャッシング</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    
+    <div class="all">
+
+      
+      <div class="one">
+        <p class="p">昨年の年収</p>
+        <p class="p5">（必須）</p>
+        <div class="input">
+          <form name="Sample2" action="Sample2.html">
+            <p class="p2">ご本人の年収</p>
+            <input class="input1" value="800" type="text" name="X"/>万円
+            <p class="p3">配偶者の年収</p>
+            <input class="input2" value="400" type="text" name="Y"/>万円
+            <input class="btn" type="button" value="診断結果を表示する！" onclick="func1()"/>
+            <div class="box">
+              <p class="p4">借入残高</p>
+              <input class="input3" type="text" name="W"> <h6>万円</h6>
+            </div>
+          </form>
+        </div>
+        
+        <div class="two">
+          <p class="p">現在のキャッシング <br>利用状況</p>
+          <p class="p1">（必須）</p>
+          <div class="input">
+            
+            <br>
+            
+            <div class="select">
+
+              <select>
+                <option>0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        
+        <h5>＊すべて半角数字でご入力ください</h5>
+
+        
+        
+        
+        
+        
+      </div>
+      
+    </div>
+    
+    <div class="img">
+      <img src="img/pexels-photo-625219.jpeg">  
+    </div>
+    
+    <div class="h4">
+      <h4>万円</h4>
+     </div>
+
+
+      <form id="form1" class="none">
+        <input type="text" id="input_message" value="">
+        <input type="button" onclick="func1()" value="送信">
+        <div class="color" id="output_message"></div>
+        <input type="text" id="input" value="">
+        <input type="button" onclick="func1()" value="送信">
+      </form>
+      <div id="output"></div>
+    </form>
+      
+
+        <div class="miss" id="miss"></div>
+   
+
+      
+      
+      
+ <script language="javascript" type="text/javascript">
+
+   
+
+   function func1() {
+      
+  var w;
+  w = Sample2.W.value;
+      
+  var x;
+  x  = Sample2.X.value;
+      
+  var y;
+  y  = Sample2.Y.value;
+      
+  var z;
+   z  = (parseInt(x) + parseInt(y)) / 3 - (w);
+    console.log(z);
+
+  var m;
+  m = ("該当する金融機関はありませんでした。条件を変えて再度診断してください。");
+
+
+    
+    var undefined = z;
+    var input_message = document.getElementById("input_message").value;
+    input_message = z ;
+    document.getElementById("output_message").innerHTML = input_message;
+    
+    if ( z < 0) {
+          var input_message = document.getElementById("input_message").value;
+    input_message =("0") ;
+    document.getElementById("output_message").innerHTML = input_message;
+
+    if ( z < 0) {
+          var input = document.getElementById("input").value;
+    input_message =("該当する金融機関はありませんでした。条件を変えて再度診断してください。") ;
+    document.getElementById("output").innerHTML = input_message;
+
+    
+  }
+ }
+   }
+        
+
+
+
+       
+        
+  </script>
+</body>
+</html>
